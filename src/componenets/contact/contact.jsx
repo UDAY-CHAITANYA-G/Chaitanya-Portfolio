@@ -43,7 +43,7 @@ const Contact=() => {
                     <input type="email" name="user_email" className="user" placeholder="Email" />
                     <textarea  name="message" className="user" placeholder="Message" />
                     <input type="submit" value="Send" className="button n-btn"/>
-                    <span>{done && "Thanks you"}</span>
+                    <span>{done && "Thank you"}</span>
                 </form>
             </motion.div>
 
