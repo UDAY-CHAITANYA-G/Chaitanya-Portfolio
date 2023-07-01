@@ -1,0 +1,81 @@
+.portfolio{
+    padding: 0 3rem 0 3rem;
+    height: 90vh;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+
+}
+
+.portfolio h2{
+    font-size: 4rem;
+    font-weight: 600;
+    opacity: 90%;    
+}
+
+.portfolio-container{
+    color: rgb(243, 242, 241);
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+
+.portfolio-container .portfolio-box{
+    width: 20rem;
+    height: 10rem;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--orange);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box .img1{
+    width:100%; 
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .img1{
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(248, 248, 248,.1), var(--orange));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem 0 2 rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    
+}
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+
+.portfolio-layer span{
+    font-size: 2rem;
+}
+
+.portfolio-layer p{
+    margin: .3rem 1rem 1rem;
+    font-size: 0.7rem;
+}
+
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items:center ;
+   
+  
+
+}
